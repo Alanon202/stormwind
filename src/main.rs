@@ -321,9 +321,8 @@ fn format_output(
         );
     }
 
-    // Changing this in format_output
     let waybar_output = WaybarOutput {
-        text: format!("{} {}°", &icon, &temp.round().abs()),
+        text: format!("{} {}°", &icon, &temp.round()),
         tooltip,
     };
 
